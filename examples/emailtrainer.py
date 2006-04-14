@@ -42,7 +42,6 @@ def runTrainer():
     from reverend.ui.trainer import Trainer
     from Tkinter import Tk
     from reverend.guessers.email import EmailClassifier
-    from reverend.thomas import Bayes
     root = Tk()
     root.title('Reverend Trainer')
     root.minsize(width=300, height=300)

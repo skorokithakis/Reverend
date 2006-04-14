@@ -4,12 +4,9 @@
 # License as published by the Free Software Foundation.
 #
         
-import os, sys
 from rfc822 import AddressList
-import email
 
 from reverend.thomas import Bayes
-from reverend.splitter import Splitter
 
 
 class EmailClassifier(Bayes):

@@ -5,7 +5,7 @@
 #
 
 import operator
-import string, re
+import re
 import math
 from sets import Set
 
