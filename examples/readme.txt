@@ -1,4 +1,4 @@
-This bried readme is designed to help you get
+This brief readme is designed to help you get
 started with using the Reverend training and
 testing UI.
 
@@ -7,7 +7,7 @@ This is how I use the trainer.
 I first prepare a couple of directories full of
 email. One will have a mix of all kinds of email
 that I want to classify and one for testing that
-is, say, containg only spam files.
+is, say, containing only spam files.
 
 I type:
     python emailtrainer.py
@@ -28,13 +28,13 @@ When I want to test, I load the Reverend data
 using the 'Load' button. I then click on the
 'Testing' button on the left. I click 'Run
 Test' which brings up the first of 2 dialogs,
-asking me to select the test data, eg my
+asking me to select the test data, e.g. my
 directory full of spam. The next dialog asks
 for the correct answer to this set of messages.
 I type in 'Spam' (case must match your pool name).
 
 I have lots of improvements in mind from training
-refinforcement to better testing and analysis.
+reinforcement to better testing and analysis.
 
 The trainer is designed to be data-agnostic. Look
 at example/emailtrainer.py to see how you can
