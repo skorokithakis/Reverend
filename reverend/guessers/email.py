@@ -28,7 +28,7 @@ class EmailClassifier(Bayes):
         text = self.getTextPlain(msg)
         if text is None:
             text =  ''
-        tl = self.splitter.split(text)
+        tl = list(self._tokenizer.tokenize(text))
         return tl
 
     def getHeaderTokens(self, msg):
@@ -37,12 +37,12 @@ class EmailClassifier(Bayes):
         text +=  msg.get('from','fromnoone') + ' '
         text +=  msg.get('to','tonoone') + ' '
         text +=  msg.get('cc','ccnoone') + ' '
-        tl = self.splitter.split(text)
+        tl = list(self._tokenizer.tokenize(text))
         return tl
           
     def getTextPlain(self, msg):
         for part in msg.walk():
-            typ = part.get_type()
+            typ = part.get_content_type()
             if typ and typ.lower() == "text/plain":
                 text = part.get_payload(decode=True)
                 return text
@@ -50,7 +50,7 @@ class EmailClassifier(Bayes):
 
     def getTextHtml(self, msg):
         for part in msg.walk():
-            typ = part.get_type()
+            typ = part.get_content_type()
             if typ and typ.lower() == "text/html":
                 text = part.get_payload(decode=False)
                 return text
