@@ -6,9 +6,19 @@
 from distutils.core import setup
 
 setup(name="Reverend",
-      version="0.3",
+      version="0.4",
       description="Divmod Reverend - a simple Bayesian classifier",
       author="Amir Bakhtiar",
       author_email="amir hat divmod point org",
       url="http://www.divmod.org/",
-      packages=['reverend', 'reverend.ui', 'reverend.guessers'], )
+      packages=['reverend', 'reverend.ui', 'reverend.guessers'],
+      classifiers=[
+            "Development Status :: 7 - Inactive",
+            "Intended Audience :: Developers",
+            "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+            "Natural Language :: English",
+            "Programming Language :: Python",
+            "Topic :: Communications :: Email :: Filters",
+            "Topic :: Software Development :: Libraries :: Python Modules",
+            "Topic :: Text Processing",
+            ])
