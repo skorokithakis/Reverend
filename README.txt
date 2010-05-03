@@ -17,7 +17,7 @@ guesser.untrain('fish','salmon carp')
 
 The first argument of train is the bucket or class that
 you want associated with the training. If the bucket does
-not exists, Bayes will create it. The second argument
+not exist, Bayes will create it. The second argument
 is the object that you want Bayes to be trained on. By
 default, Bayes expects a string and uses something like
 string.split to break it into indidual tokens (words).
@@ -35,5 +35,5 @@ The two ways to extend it are:
    return a list of string tokens relevant to your app.
 
 
-I hope all you guesses are right,
+I hope all your guesses are right,
 amir@divmod.org
